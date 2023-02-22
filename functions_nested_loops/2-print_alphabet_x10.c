@@ -15,12 +15,10 @@ void print_alphabet_x10(void)
 
 		while (d <= 9)
 		{
-			_putchar(d);
-			d++;
+			_putchar(l);
+			l++;
 		}
 
-		_putchar(l);
-		l++;
 	}
 	_putchar('\n');
 }
