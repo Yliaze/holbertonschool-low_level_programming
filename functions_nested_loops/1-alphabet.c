@@ -2,8 +2,7 @@
 
 /**
  * main - The alphabet game
- * Description: Write a function that prints the alphabet,
- * in lowercase, followed by a new line.
+ * print_alphabet - prints lower case alphabet
  *
  * Return: Always 0 (Success)
  */
