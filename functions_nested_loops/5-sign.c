@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _sign - Shows 1 if greater than zero.
+ * print_sign - Shows 1 if greater than zero.
  * Shows 0 if zero.
  * Shows -1 if less than zero.
  *
