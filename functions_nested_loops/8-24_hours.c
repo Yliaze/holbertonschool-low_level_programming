@@ -3,7 +3,6 @@
  * jack_bauer - Prints every minute of
  * the day of Jack Bauer.
  *
- * @n: The input number as an integer.
  *
  * Return : (void)
  */
@@ -26,6 +25,5 @@ void jack_bauer(void)
 			m++;
 		}
 		h++;
-		
 	}
 }
