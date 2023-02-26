@@ -14,7 +14,7 @@ void print_square(int size)
 
 	if (size > 0)
 	{
-		for (colonne = 1000; colonne > 1000 - size ; colonne--)
+		for (colonne = 0; colonne < size ; colonne++)
 		{
 			for (ligne = 0; ligne < size; ligne++)
 			{
