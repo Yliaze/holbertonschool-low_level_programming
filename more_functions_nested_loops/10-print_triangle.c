@@ -13,7 +13,7 @@ void print_triangle(int size)
 	int colonne;
 	int cl;
 
-	if (size > 0)
+	if (size >= 0)
 	{
 		for (ligne = 0; ligne < size ; ligne++)
 		{
@@ -21,11 +21,11 @@ void print_triangle(int size)
 			{
 				_putchar(' ');
 			}
-				for (cl = colonne + ligne; cl >= 1; cl--)
-				{
-					_putchar('#');
-				}
-				_putchar('\n');
+			for (cl = colonne + ligne; cl >= 1; cl--)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
 		}
 		_putchar('\n');
 	}
