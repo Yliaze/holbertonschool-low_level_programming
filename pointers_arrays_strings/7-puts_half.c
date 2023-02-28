@@ -17,7 +17,6 @@ void puts_half(char *str)
 		count++;
 	}
 
-			
 	if ((count % 2) != 0)
 	{
 		middle = (count + 1) / 2;
