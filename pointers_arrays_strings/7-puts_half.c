@@ -20,7 +20,7 @@ void puts_half(char *str)
 			
 	if ((count % 2) != 0)
 	{
-		middle = (count - 1) / 2;
+		middle = (count + 1) / 2;
 	}
 	else
 	{
