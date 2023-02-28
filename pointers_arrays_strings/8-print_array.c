@@ -12,7 +12,7 @@ void print_array(int *a, int n)
 {
 	int i = 0;
 
-	while (a[i] < a[n])
+	while (a[i] <= a[n])
 	{
 		printf("%d", a[i]);
 		i++;
