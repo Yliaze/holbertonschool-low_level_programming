@@ -3,3 +3,6 @@ Project C - pinters, arrays and strings
 
 And Project C - More pointers, arrays and strings
 0. strcat - Write a function that concatenates two strings.
+
+And Project C - Even more pointers, arrays and strings
+0. memset - Write a function that fills memory with a constant byte.
