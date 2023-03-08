@@ -13,6 +13,7 @@
 int valid_number(char *arg)
 {
 	int i = 0;
+
 	for (i = 0; arg[i] != '\0'; i++)
 	{
 		if (!isdigit(arg[i]))
@@ -42,7 +43,7 @@ int main(int argc, char *argv[])
 		{
 			sum += atoi(argv[i]);
 		}
-		else 
+		else
 		{
 			printf("Error\n");
 			return (1);
