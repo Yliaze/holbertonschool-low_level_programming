@@ -13,7 +13,7 @@ char *str_concat(char *s1, char *s2)
 	int len1;
 	int len2;
 	int i;
-	int j;
+	int j = 0;
 	char *p;
 
 	if (s1 == 0)
@@ -35,9 +35,11 @@ char *str_concat(char *s1, char *s2)
 	{
 		p[i] = s1[i];
 	}
-	for (j = 0; j < len2; i++, j++)
+	while (j < len2)
 	{
 		p[i] = s2[j];
+		i++;
+		j++;
 	}
 	return (p);
 }
