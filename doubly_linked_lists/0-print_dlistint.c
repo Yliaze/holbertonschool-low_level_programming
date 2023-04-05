@@ -4,7 +4,7 @@
  * print_dlistint - Prints all of the elements of a
  * doubly linked list.
  *
- * @h: Pointer to a linked list head.
+ * @h: Pointer to a doubly linked list head.
  *
  * Return: The number of total nodes in the
  * doubly linked list.

@@ -4,7 +4,7 @@
  * dlistint_len - Returns the number of elements in a
  * doubly linked list
  *
- * @h: Pointer to a linked list head.
+ * @h: Pointer to a doubly linked list head.
  *
  * Return: The number of elements in the
  * doubly linked list.
