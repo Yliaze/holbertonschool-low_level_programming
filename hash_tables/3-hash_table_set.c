@@ -14,25 +14,24 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int index;
 	hash_node_t *node;
 
-	/* identification de la clè */
+	if (ht == NULL || key == NULL || value == NULL)
+		return (0);
+
 	index = key_index((unsigned char *)key, ht->size);
 
-	/* Go à l'indice de la hashtable correspondant à la clé betty */
 	node = ht->array[index];
 
-	/* Parcourir la liste à l'index */
 	while (node != NULL)
 	{
-		/* comparer notre clé à la clé de la nouvelle node */
 		if (strcmp(node->key, key) == 0)
 		{
-			node->value = strdup(value); /* On change la value */
+			free(node->value);
+			node->value = strdup(value);
 			return (1);
 		}
 		node = node->next;
 	}
 
-	/* si index pas dans liste on add la node et ses valeurs */
 	node = malloc(sizeof(hash_node_t));
 	if (node == NULL)
 		return (0);
@@ -40,7 +39,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	node->key = strdup(key);
 	node->value = strdup(value);
 	node->next = ht->array[index];
-	/* maj du pointeur vers le noeud 1 de la liste qui contient la clé et la valeur. */
 	ht->array[index] = node;
 
 	return (1);
